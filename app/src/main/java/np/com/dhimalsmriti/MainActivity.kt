@@ -20,6 +20,7 @@ class MainActivity : ComponentActivity() {
                 )
                 "add" -> AddTaskScreen { screen = "home" }
                 "edit" -> EditTaskScreen { screen = "home" }
+                "completed" -> CompletedTasksScreen { screen = "home" }
             }
         }
     }
