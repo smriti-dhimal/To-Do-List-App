@@ -18,6 +18,7 @@ class MainActivity : ComponentActivity() {
                     openEdit = { screen = "edit" },
                     openCompleted = { screen = "completed" }
                 )
+                "add" -> AddTaskScreen { screen = "home" }
             }
         }
     }
