@@ -13,6 +13,11 @@ class MainActivity : ComponentActivity() {
 
             when (screen) {
                 "splash" -> SplashScreen { screen = "home" }
+                "home" -> HomeScreen(
+                    openAdd = { screen = "add" },
+                    openEdit = { screen = "edit" },
+                    openCompleted = { screen = "completed" }
+                )
             }
         }
     }
